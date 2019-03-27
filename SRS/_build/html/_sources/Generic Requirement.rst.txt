@@ -1,0 +1,53 @@
+Generic Requirement
+=========
+
+2.1 Features
+----------------
+The OMG application must be simple, fast, and intuitive to run, and it can be
+used by biologists to analyze data, process data, and sift through it.
+The OMG also have a submit button.It is Filtrate.After importing the data of 
+the two gene files, we only need to click this button lightly to realize the 
+rapid screening of the data.
+
+2.2 Sample Input
+----------------
+We use our imported gene files and click the screen button to achieve perfect 
+screening.The content format of the imported gene file must be the same as
+the format given below.The sample input as follows:
+
+   ===========  ================  ==================
+     Gene_Id  	 Control Sample    Knock Out Sample
+   ===========  ================  ==================
+    AT1G01010     1.198558083	     2.036161827
+    AT1G01020	  13.75736234	     13.370796 
+    AT1G01030	  0.833779536	     0.203616183
+    AT1G01040	  9.58846466	     7.126566394 
+    AT1G01046	       0         	      0
+    AT1G01050	  23.81482799	     21.10821094
+    AT1G01060	  0.625334652        1.221697096
+    AT1G01070	  1.719670292	     0.950208853
+    AT1G01080	  28.34850421	     25.24840665
+    AT1G01090	  58.26034505	     42.96301455
+    AT1G01100	  1066.508249	     1308.030358
+    AT1G01110	  2.709783491	     1.425313279
+    AT1G01120	  51.32955266	     44.32045576
+    AT1G01130	  1.094335641	     0.814464731
+    AT1G01140	  18.1347049	     15.20334164
+    AT1G01150	  0.104222442	          0
+    AT1G01160	  21.93882403        20.09013002
+    AT1G01170	  43.35653585	     36.58304082
+    AT1G01180	  2.13656006	     5.0225325
+   ===========  ================  ==================
+
+2.3 Sample Output
+----------------
+Output results must be concise, if the input data does not meet the format 
+requirements, the program will warn and prompt to re-enter the data in 
+the correct format, otherwise it will not run.The format of the output is 
+preferably tabular.Like this:
+
+  =========  ================  ================  ==================
+   Gene_Id    Control Sample	 Treat Sample	  Log2 FC/Log2 CPM
+  =========  ================  ================  ==================
+  AT1G01010	   1.198558083	     2.036161827        0.76/-0.396
+  =========  ================  ================  ==================
